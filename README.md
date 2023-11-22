@@ -56,6 +56,3 @@
 <ul>Link to Python installation:
   https://www.python.org/downloads/
 </ul>
-
-<ul>Link to Weather API:
-https://openweathermap.org/api</ul>

@@ -1,6 +1,6 @@
 import json
 import requests
-from retrying import retry
+# from retrying import retry
 from config import API_BASE_URL, WEATHER_API_KEY
 
 
@@ -10,7 +10,7 @@ def is_valid_city_name(city):
 
 
 # Retry decorator is used to handle transient errors during API requests
-@retry(wait_exponential_multiplier=1000, wait_exponential_max=10000, stop_max_attempt_number=5)
+# @retry(wait_exponential_multiplier=1000, wait_exponential_max=10000, stop_max_attempt_number=5)
 def get_forecast(api_key, city):
     # Define the base URL of the API
     base_url = API_BASE_URL
